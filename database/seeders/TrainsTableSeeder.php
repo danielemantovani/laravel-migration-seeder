@@ -18,6 +18,7 @@ class TrainsTableSeeder extends Seeder
             $faker = Faker\Factory::create('it_IT');
             $newTrain = new Train();
             $newTrain->company = $faker->company();
+            $newTrain->departure_train = $faker->dateTime();
             $newTrain->departureStation = $faker->city();
             $newTrain->arrivalStation = $faker->city();
             $newTrain->departureTime = $faker->time();

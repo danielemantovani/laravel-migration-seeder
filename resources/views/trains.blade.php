@@ -6,6 +6,7 @@
         <thead class="text-center">
             <tr>
                 <th scope="col">Azienda</th>
+                <th scope="col">Data di partenza</th>
                 <th scope="col">Stazione di partenza</th>
                 <th scope="col">Stazione di arrivo</th>
                 <th scope="col">Orario di partenza</th>
@@ -20,6 +21,7 @@
             @foreach ($trains as $train)
                 <tr>
                     <td>{{$train->company}}</td>
+                    <td>{{$train->departure_train}}</td>
                     <td>{{$train->departureStation}}</td>
                     <td>{{$train->arrivalStation}}</td>
                     <td>{{$train->departureTime}}</td>
